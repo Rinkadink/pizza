@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Order;
 use Session;
-use Illuminate\Http\Request;
 use Auth;
+use Illuminate\Http\Request;
 
 class OrderController extends Controller
 {
@@ -16,7 +16,9 @@ class OrderController extends Controller
      */
     public function index()
     {
-        //
+        $orders=Order::orderBy('created_at', 'DESC')->paginate(10);
+
+        return view('order.index', compact('orders'));
     }
 
 
