@@ -25,8 +25,8 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ route('admin.home')}}">
-                   The Yummi Pizza:Admin panel
+                <a class="navbar-brand" href="{{ route('admin.home') }}">
+                    The Yummi pizza: Admin panel
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -40,6 +40,9 @@
                         </li>
                         <li class="nav-item">
                             <a href="{{route('pizza.index')}}" class="nav-link">{{__('Pizzas')}}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{route('order.index')}}" class="nav-link">{{__('Orders')}}</a>
                         </li>
                     </ul>
 
